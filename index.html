@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "lhVYnezVKgBOdzjkX",
+      });
+   })();
+</script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Countdown timer</h2>
+        <div id="countdown">
+            <div class="box"><span id="days">00</span>days</div>
+            <div class="box"><span id="hours">00</span>hrs</div>
+            <div class="box"><span id="minutes">00</span>mins</div>
+            <div class="box"><span id="seconds">00</span>secs</div>
+        </div>
+        <h2>Progess:</h2>
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+            <p id="statusMessage"></p>
+        </div>
+    </div>
+<script 
+src="script.js">
+</script>
+</body>
+</html>
