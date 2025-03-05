@@ -1,7 +1,7 @@
-const endDate = new Date("29 Dec, 2024 21:55:00").getTime();
+const endDate = new Date("29 Mar, 2024 21:57:00").getTime();
 const startDate = new Date().getTime();
 let x = setInterval(function updateTimer() {
-    const now = new Date().getTime();
+    const now = new Date().getTime(); 
 
     const distanceCovered = now - startDate;
     const distancePending = endDate - now;
